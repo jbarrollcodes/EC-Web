@@ -1,0 +1,267 @@
+/* 
+
+Your Name
+
+*/
+
+/* to set general font styles across the entire site, do it here. this will help ensure consistency */
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1{
+	font-size: 40px;
+}
+
+/* to set font styles on specific elements, do it like this. you will now overwrite the styles set on the body */
+p {  
+	font-family: serif;
+	font-size: 20px;
+	max-width: 600px;
+	margin-bottom: 1em;
+
+}
+
+/* style your links */
+
+a{
+	font-family: serif;
+	font-size: 20px;
+}
+a:link { 
+	text-decoration: none;
+	color: black;
+
+
+
+}
+
+h1.uppercase {
+    text-transform: uppercase;
+}
+
+h4.uppercase {
+    text-transform: uppercase;
+}
+
+p.author{
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+}
+
+h1{
+	margin-top: 50px;
+
+	font-size: 60px;
+	margin-bottom: 20px;
+	line-height: 55px;
+	max-width: 700px;
+}
+
+h3{
+	max-width: 600px;
+}
+
+h4{
+	max-width: 400px;
+}
+
+
+/*p{
+	margin: 0;
+	margin-bottom: 1em;
+	max-width: 600px;
+}*/
+
+div {
+    cursor:pointer;
+}
+
+.arrows{
+	width: 50px;
+	position: relative;
+	left: 47%;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
+
+
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+
+
+}
+
+a:active {
+	text-decoration: none;
+	color: black;
+
+
+}
+
+.huge{
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 150%;
+	color: black;
+}
+
+.huge:hover{
+	background-color: cyan;
+	box-shadow: 10px 10px;
+
+}
+
+li{
+	list-style: none;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+.thumbnail{
+	width: 300px;
+	display: inline-block;
+	position: relative;
+
+}
+
+.biggie{
+	width: 600px;
+	height: auto;
+	border: 1px solid;
+	position: relative;
+}
+
+#humpty2, #humpty3, #heart2, #heart3, #cb2, #cb3, #cb4{
+	display: none;
+}
+
+
+
+.archive{
+	display: none;
+}
+
+/* you can style your elements however you'd like. I'm adding a border so we can see them */
+iframe {
+	border: solid red 1px;
+	width: 90%;
+	height: 500px;
+	position: relative;
+
+	margin: auto;
+
+}
+
+pre {
+	border: solid blue 1px;
+}
+
+/* max-width: 100%; will prevent an element from extending beyond the page boundaries */
+img {
+	max-width: 100%;
+}
+
+/* width: 100%; will force an element to adopt the width of the page boundaries */
+img.full-width {
+	position: relative;
+	margin: auto;
+	width: 100%;
+}
+
+.smallimage{
+	width: 300px;
+	height: auto;
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+@media only screen and (min-width: 501px) {
+  .smallimage{
+  	display: none;
+  }
+
+
+    	}
+
+@media only screen and (max-width: 500px) {
+/*img{
+	max-width: 50%
+	height: auto;
+}*/
+
+
+h1{
+	font-size: 40px;
+	line-height: 35px;
+}
+
+.smallimage{
+  	display: block;
+  }
+
+ .image, .image2, .image3, .image4, .image5, .image6, .image7, .image8{
+  	display: none;
+  }
+
+
+
+}
+
+
+/* CLASSES
+---------- */
+
+/* to apply different styles to different pages, you can add a class name to the body. when doing this, think about what you're changing and why. the overall structure and typogrphy around your site should feel consistent. any changes or deviations should be meaningful. click around between all the pages in this site so you can see how these classes and their respective styles are being applied. */
+.home { 
+	font-size: 30px;
+}
+.project1 {
+
+}
+
+.project-02 {
+
+}
+
+
+
+/* CONTAINERS
+---------- */
+/* why we use wrappers, here: http://stackoverflow.com/a/5275428 */
+.wrapper {
+	margin: 30px auto;
+	max-width: 90%;
+}
+
+.header {
+	padding-bottom: 40px;
+}
+
+.footer {
+	padding-top: 30px;
+}
